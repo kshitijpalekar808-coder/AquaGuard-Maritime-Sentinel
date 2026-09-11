@@ -617,8 +617,9 @@ export const MaritimeSentinelConsole: React.FC = () => {
   // Trigger Real Forensic Investigation Pipeline via Python Backend
   const handleExecuteInvestigation = async () => {
     setIsInvestigating(true);
+    const targetScene = customData ? customData.filename.replace(/\.[^/.]+$/, "") : selectedPreset;
     const steps = [
-      "Phase 1: Reading Sentinel-1 GeoTIFF (CRS EPSG:4326)...",
+      `Phase 1: Reading Sentinel-1 GeoTIFF ${targetScene} (CRS EPSG:4326)...`,
       "Phase 2: EfficientNet-B4 + UNet++ Deep Segmentation (effnetb4andunetpp.pt)...",
       "Phase 3: Connected Components & Exact Centroid GPS Extraction...",
       "Phase 4: Computing Surveillance Time Span Window (T-24h to T0)...",
@@ -641,7 +642,7 @@ export const MaritimeSentinelConsole: React.FC = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          presetId: selectedPreset,
+          presetId: targetScene,
           driftHours: driftHorizon,
         }),
       });
@@ -649,7 +650,7 @@ export const MaritimeSentinelConsole: React.FC = () => {
       if (res.ok) {
         const data = await res.json();
         setCustomData({
-          filename: data.filename || `${selectedPreset}.tif`,
+          filename: data.filename || `${targetScene}.tif`,
           imageUrl: data.panels?.sar || preset.imageSrc,
           isSpill: data.isSpill ?? preset.isSpill,
           areaKm2: data.areaKm2 ?? preset.areaKm2,
@@ -688,10 +689,11 @@ export const MaritimeSentinelConsole: React.FC = () => {
 
     setIsUploading(true);
     setIsInvestigating(true);
-    setInvestigationStep(`Ingesting & decoding ${file.name} via Sharp C++ rasterizer...`);
+    setInvestigationStep(`Ingesting & running full 10-phase analysis on ${file.name}...`);
 
     const formData = new FormData();
     formData.append("file", file);
+    formData.append("driftHours", driftHorizon.toString());
 
     try {
       const res = await fetch("/api/process-sar", {
@@ -701,15 +703,9 @@ export const MaritimeSentinelConsole: React.FC = () => {
 
       if (res.ok) {
         const data = await res.json();
-        const fallbackImg = file.name.includes("00003")
-          ? "/benchmarks/00003.webp"
-          : file.name.includes("00148")
-          ? "/benchmarks/00148.webp"
-          : "/benchmarks/00001.webp";
-
         setCustomData({
           filename: data.filename || file.name,
-          imageUrl: data.panels?.sar || data.imageUrl || data.dataUrl || fallbackImg,
+          imageUrl: data.panels?.sar || data.imageUrl || data.dataUrl || "/benchmarks/00003.webp",
           isSpill: data.isSpill ?? true,
           areaKm2: data.areaKm2 ?? 4.12,
           conf: data.conf ?? 94.5,
@@ -736,75 +732,13 @@ export const MaritimeSentinelConsole: React.FC = () => {
           fleet: data.fleet && data.fleet.length ? data.fleet : preset.fleet,
           panels: data.panels || preset.panels,
         });
-      } else {
-        const fallbackImg = file.name.includes("00003")
-          ? "/benchmarks/00003.webp"
-          : file.name.includes("00148")
-          ? "/benchmarks/00148.webp"
-          : "/benchmarks/00001.webp";
-
-        setCustomData({
-          filename: file.name,
-          imageUrl: fallbackImg,
-          isSpill: true,
-          areaKm2: 4.12,
-          conf: 95.2,
-          edgeGradient: 29.1,
-          iou: 89.4,
-          region: "Red Sea / Arabian EEZ Corridor",
-          coords: { lat: 20.1616, lon: 38.2182 },
-          windSpeed: 6.2,
-          windDir: 190,
-          driftVector: { u: -0.05, v: 0.09 },
-          culprit: {
-            name: "MV PACIFIC TITAN",
-            imo: "IMO9482012",
-            mmsi: 636018241,
-            type: "Bulk Carrier",
-            sog: 7.2,
-            distKm: 0.38,
-            guiltProb: 97.8,
-            status: "CULPRIT",
-          },
-          fleet: preset.fleet,
-          panels: preset.panels,
-        });
       }
     } catch (err) {
       console.error("Upload error:", err);
-      const fallbackImg = file.name.includes("00003")
-        ? "/benchmarks/00003.webp"
-        : "/benchmarks/00001.webp";
-
-      setCustomData({
-        filename: file.name,
-        imageUrl: fallbackImg,
-        isSpill: true,
-        areaKm2: 4.12,
-        conf: 95.2,
-        edgeGradient: 29.1,
-        iou: 89.4,
-        region: "Red Sea / Arabian EEZ Corridor",
-        coords: { lat: 20.1616, lon: 38.2182 },
-        windSpeed: 6.2,
-        windDir: 190,
-        driftVector: { u: -0.05, v: 0.09 },
-        culprit: {
-          name: "MV PACIFIC TITAN",
-          imo: "IMO9482012",
-          mmsi: 636018241,
-          type: "Bulk Carrier",
-          sog: 7.2,
-          distKm: 0.38,
-          guiltProb: 97.8,
-          status: "CULPRIT",
-        },
-        fleet: preset.fleet,
-        panels: preset.panels,
-      });
     } finally {
       setIsUploading(false);
-      handleExecuteInvestigation();
+      setIsInvestigating(false);
+      setInvestigationStep("");
     }
   };
 
