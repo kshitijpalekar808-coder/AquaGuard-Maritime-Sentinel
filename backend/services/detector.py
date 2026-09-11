@@ -8,14 +8,6 @@ import numpy as np
 import rasterio
 from pathlib import Path
 
-import sys
-from pathlib import Path
-
-# Add project root to sys.path for direct execution
-ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-if str(ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(ROOT_DIR))
-
 import backend.services.win_fix
 from ultralytics import YOLO
 from backend.config import MODEL_PATH, CONF_THRESHOLD
@@ -167,9 +159,7 @@ class SARDetector:
         chip_gt = cv2.resize((msk_bin[y1:y2, x1:x2] > 0).astype(np.uint8) * 255, (512, 512), interpolation=cv2.INTER_NEAREST)
         rgb_sar = cv2.cvtColor(chip_sar, cv2.COLOR_GRAY2RGB)
 
-        chip_dir = os.path.dirname(temp_chip_path)
-        if chip_dir:
-            os.makedirs(chip_dir, exist_ok=True)
+        os.makedirs(os.path.dirname(temp_chip_path), exist_ok=True)
         cv2.imwrite(temp_chip_path, chip_sar, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
 
         pred_msk = np.zeros((512, 512), dtype=np.uint8)
