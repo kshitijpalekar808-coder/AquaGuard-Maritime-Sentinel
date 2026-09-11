@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b536fd96a74637d6eb25acb4c0a5c22 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7b536fd96a74637d6eb25acb4c0a5c22" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b536fd96a74637d6eb25acb4c0a5c22 = L.map(
+                "map_7b536fd96a74637d6eb25acb4c0a5c22",
+                {
+                    center: [35.43069, 35.03517],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6570959cd69df39588efebd31c506f5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c6570959cd69df39588efebd31c506f5.addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var circle_marker_817b31ec7a12bb0affa9946b93076f35 = L.circleMarker(
+                [35.43069, 35.03517],
+                {"bubblingMouseEvents": true, "color": "#ff4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4444", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+        var popup_519f8747153bdfdb0df93776b29553f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63ab9ae309c69d9029b414115ac75ac4 = $(`<div id="html_63ab9ae309c69d9029b414115ac75ac4" style="width: 100.0%; height: 100.0%;"><b>SAR Spill Sighting</b><br>GPS: 35.4307°N, 35.0352°E<br>Area: 4.65 km²</div>`)[0];
+                popup_519f8747153bdfdb0df93776b29553f8.setContent(html_63ab9ae309c69d9029b414115ac75ac4);
+            
+        
+
+        circle_marker_817b31ec7a12bb0affa9946b93076f35.bindPopup(popup_519f8747153bdfdb0df93776b29553f8)
+        ;
+
+        
+    
+    
+            var circle_marker_6d629f1de2509144d70217aa566289ac = L.circleMarker(
+                [35.4569, 35.0013],
+                {"bubblingMouseEvents": true, "color": "#ffeb3b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb3b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+        var popup_d1bea7b56cd1e6a6fdbea6f625be2182 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba78bc2cf4fec627a8dc9b714688104b = $(`<div id="html_ba78bc2cf4fec627a8dc9b714688104b" style="width: 100.0%; height: 100.0%;"><b>Discharge Origin</b><br>Drift: -6.0h (4.2 km)</div>`)[0];
+                popup_d1bea7b56cd1e6a6fdbea6f625be2182.setContent(html_ba78bc2cf4fec627a8dc9b714688104b);
+            
+        
+
+        circle_marker_6d629f1de2509144d70217aa566289ac.bindPopup(popup_d1bea7b56cd1e6a6fdbea6f625be2182)
+        ;
+
+        
+    
+    
+            var poly_line_3326f4dba08a6fe0e2f94aa1ba1c665d = L.polyline(
+                [[35.4569, 35.0013], [35.43069, 35.03517]],
+                {"bubblingMouseEvents": true, "color": "#ffeb3b", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#ffeb3b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var marker_1666b8879350bcbf1955d77da50fce47 = L.marker(
+                [35.4588, 35.0046],
+                {
+}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var icon_55aec3dfd61d213326fcef888d665a8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b36aa31a591a5a4209b403d08a4a38d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd3361d8f2a873630e1fe5ecd059b34c = $(`<div id="html_fd3361d8f2a873630e1fe5ecd059b34c" style="width: 100.0%; height: 100.0%;"><b>🚨 CULPRIT: MT PACIFIC GLORY</b><br>Guilt: 74.4%<br>Speed: 6.1 kn</div>`)[0];
+                popup_1b36aa31a591a5a4209b403d08a4a38d.setContent(html_fd3361d8f2a873630e1fe5ecd059b34c);
+            
+        
+
+        marker_1666b8879350bcbf1955d77da50fce47.bindPopup(popup_1b36aa31a591a5a4209b403d08a4a38d)
+        ;
+
+        
+    
+    
+                marker_1666b8879350bcbf1955d77da50fce47.setIcon(icon_55aec3dfd61d213326fcef888d665a8e);
+            
+    
+            var marker_189fc695a9f0f2084fa0d77f58b40ad8 = L.marker(
+                [35.51, 34.758],
+                {
+}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var icon_b649bdf3c1764fb0143942149aaebf01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9de0e2263dc10d05a974e32d5230ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a703e466a71b4a0edfe6bab0b77e8bc6 = $(`<div id="html_a703e466a71b4a0edfe6bab0b77e8bc6" style="width: 100.0%; height: 100.0%;"><b>MT DESH SHANTI</b><br>Guilt: 12.1%<br>Speed: 19.1 kn</div>`)[0];
+                popup_e9de0e2263dc10d05a974e32d5230ff5.setContent(html_a703e466a71b4a0edfe6bab0b77e8bc6);
+            
+        
+
+        marker_189fc695a9f0f2084fa0d77f58b40ad8.bindPopup(popup_e9de0e2263dc10d05a974e32d5230ff5)
+        ;
+
+        
+    
+    
+                marker_189fc695a9f0f2084fa0d77f58b40ad8.setIcon(icon_b649bdf3c1764fb0143942149aaebf01);
+            
+    
+            var marker_f27dff25e5e94447916841390d4bc5ba = L.marker(
+                [35.3094, 34.8494],
+                {
+}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var icon_c243c7ec5430a52a933a4186e2f15cb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ecb59d0560b88c8238390b703e181b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fd54dabc6475b257dddd11f4b207972 = $(`<div id="html_4fd54dabc6475b257dddd11f4b207972" style="width: 100.0%; height: 100.0%;"><b>MT FRONT ALTAIR</b><br>Guilt: 12.1%<br>Speed: 16.8 kn</div>`)[0];
+                popup_d3ecb59d0560b88c8238390b703e181b.setContent(html_4fd54dabc6475b257dddd11f4b207972);
+            
+        
+
+        marker_f27dff25e5e94447916841390d4bc5ba.bindPopup(popup_d3ecb59d0560b88c8238390b703e181b)
+        ;
+
+        
+    
+    
+                marker_f27dff25e5e94447916841390d4bc5ba.setIcon(icon_c243c7ec5430a52a933a4186e2f15cb9);
+            
+    
+            var marker_465c7e02b1765e24c17eb1f99004a697 = L.marker(
+                [35.6625, 34.9568],
+                {
+}
+            ).addTo(map_7b536fd96a74637d6eb25acb4c0a5c22);
+        
+    
+            var icon_3b29ee6f530227ad3850fd6476656b8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_738e743130514600c0c012ee6dec76a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bb6cf35dd6b0a998d0cf91937d2ef28 = $(`<div id="html_2bb6cf35dd6b0a998d0cf91937d2ef28" style="width: 100.0%; height: 100.0%;"><b>ICGS SAMRAT</b><br>Guilt: 1.5%<br>Speed: 17.9 kn</div>`)[0];
+                popup_738e743130514600c0c012ee6dec76a8.setContent(html_2bb6cf35dd6b0a998d0cf91937d2ef28);
+            
+        
+
+        marker_465c7e02b1765e24c17eb1f99004a697.bindPopup(popup_738e743130514600c0c012ee6dec76a8)
+        ;
+
+        
+    
+    
+                marker_465c7e02b1765e24c17eb1f99004a697.setIcon(icon_3b29ee6f530227ad3850fd6476656b8b);
+            
+</script>
+</html>

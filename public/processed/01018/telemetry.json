@@ -1,0 +1,126 @@
+{
+  "filename": "01018.tif",
+  "isSpill": false,
+  "areaKm2": 0.0,
+  "perimeterKm": 0.0,
+  "conf": 0.0,
+  "edgeGradient": 0.0,
+  "iou": 100.0,
+  "region": "Gulf of Mexico",
+  "coords": {
+    "lat": 28.77783,
+    "lon": -94.28572
+  },
+  "originCoords": {
+    "lat": 28.7306,
+    "lon": -94.26
+  },
+  "driftKm": 5.82,
+  "advectionKnots": 0.5,
+  "driftHours": 6.0,
+  "windSpeed": 4.2,
+  "windDir": 191.0,
+  "driftVector": {
+    "u": -0.12,
+    "v": 0.24
+  },
+  "filterVerdict": "Look-Alike Suppressed by Physics (Fuzzy Edge: 0.0 < 22.0)",
+  "timeSpan": {
+    "acquisition_utc": "2026-09-11 06:22:16 UTC",
+    "search_window_from": "2026-09-10 00:00:00",
+    "search_window_to": "2026-09-11 23:59:59",
+    "duration_hours": 24.0
+  },
+  "accessaisTelemetry": {
+    "success": true,
+    "source": "NOAA MarineCadastre AccessAIS (Sector Estimate)",
+    "time_span": {
+      "from_utc": "2026-09-10 00:00:00",
+      "to_utc": "2026-09-11 23:59:59",
+      "duration_hours": 24.0
+    },
+    "bounding_box": {
+      "min_lon": -94.6469,
+      "min_lat": 28.4268,
+      "max_lon": -93.9286,
+      "max_lat": 29.0566,
+      "sq_miles": 2180.0
+    },
+    "traffic_records": 31347,
+    "data_size_bytes": 3422238,
+    "data_size_mb": 3.42,
+    "runtime_ms": 56,
+    "api_valid": true
+  },
+  "effnetSegmentation": {
+    "model": "EfficientNet-B4 + UNet++ (effnetb4andunetpp.pt)",
+    "metrics": {
+      "epoch": 20,
+      "dice": 0.8728,
+      "iou": 0.7843,
+      "precision": 0.867,
+      "recall": 0.908
+    },
+    "centroid": {
+      "latitude": 28.74172,
+      "longitude": -94.28773
+    },
+    "areaKm2": 0.42,
+    "spillDetected": true
+  },
+  "culprit": null,
+  "fleet": [
+    {
+      "name": "MV CHENNAI EXPRESS",
+      "imo": "IMO9321456",
+      "mmsi": 419000128,
+      "type": "Container Cargo",
+      "sog": 17.6,
+      "distKm": 17.8,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000228,
+      "type": "Crude Tanker",
+      "sog": 17.4,
+      "distKm": 13.1,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "ICGS SAMRAT",
+      "imo": "IMO0000001",
+      "mmsi": 419000328,
+      "type": "Coast Guard Patrol",
+      "sog": 16.6,
+      "distKm": 11.4,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT BHARAT RATNA",
+      "imo": "IMO9387401",
+      "mmsi": 419000428,
+      "type": "Crude Tanker",
+      "sog": 15.4,
+      "distKm": 18.7,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "effnet": "panel_effnet.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d587c501f60ea09b12d97772283534a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9d587c501f60ea09b12d97772283534a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9d587c501f60ea09b12d97772283534a = L.map(
+                "map_9d587c501f60ea09b12d97772283534a",
+                {
+                    center: [35.43069, 35.03517],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d3b1f72066a587804dd71cae8bceb70a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d3b1f72066a587804dd71cae8bceb70a.addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var circle_marker_84929564c5cb7fab58dfc95dab04b225 = L.circleMarker(
+                [35.43069, 35.03517],
+                {"bubblingMouseEvents": true, "color": "#ff4444", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4444", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+        var popup_f84e4daf8832854cc5a323dfd8531571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28b832a448992ed7ced2a2e24ad0183f = $(`<div id="html_28b832a448992ed7ced2a2e24ad0183f" style="width: 100.0%; height: 100.0%;"><b>SAR Spill Sighting</b><br>GPS: 35.4307°N, 35.0352°E<br>Area: 4.65 km²</div>`)[0];
+                popup_f84e4daf8832854cc5a323dfd8531571.setContent(html_28b832a448992ed7ced2a2e24ad0183f);
+            
+        
+
+        circle_marker_84929564c5cb7fab58dfc95dab04b225.bindPopup(popup_f84e4daf8832854cc5a323dfd8531571)
+        ;
+
+        
+    
+    
+            var circle_marker_395e828613f924d6dbb1b2feec728657 = L.circleMarker(
+                [35.4433, 34.9822],
+                {"bubblingMouseEvents": true, "color": "#ffeb3b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb3b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+        var popup_eafa17ea7ef30a8a9beaf81f892b6048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6577525df0730e2f54d8eb421c00f0e9 = $(`<div id="html_6577525df0730e2f54d8eb421c00f0e9" style="width: 100.0%; height: 100.0%;"><b>Discharge Origin</b><br>Drift: -6.0h (5.0 km)</div>`)[0];
+                popup_eafa17ea7ef30a8a9beaf81f892b6048.setContent(html_6577525df0730e2f54d8eb421c00f0e9);
+            
+        
+
+        circle_marker_395e828613f924d6dbb1b2feec728657.bindPopup(popup_eafa17ea7ef30a8a9beaf81f892b6048)
+        ;
+
+        
+    
+    
+            var poly_line_64ce81450df0f4c8af3be1fdfe2ccbed = L.polyline(
+                [[35.4433, 34.9822], [35.43069, 35.03517]],
+                {"bubblingMouseEvents": true, "color": "#ffeb3b", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#ffeb3b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var marker_3988c2dd3e035fe39d4ac528abca97a3 = L.marker(
+                [35.4444, 34.9841],
+                {
+}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var icon_29ff47eac986f4d2f751b0485c3a32a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e3cfde0ced62a9cd2158b08fbef9f44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59aa383666e322842f0dcbb5cd7e4d91 = $(`<div id="html_59aa383666e322842f0dcbb5cd7e4d91" style="width: 100.0%; height: 100.0%;"><b>🚨 CULPRIT: MT FRONT ALTAIR</b><br>Guilt: 72.8%<br>Speed: 5.9 kn</div>`)[0];
+                popup_7e3cfde0ced62a9cd2158b08fbef9f44.setContent(html_59aa383666e322842f0dcbb5cd7e4d91);
+            
+        
+
+        marker_3988c2dd3e035fe39d4ac528abca97a3.bindPopup(popup_7e3cfde0ced62a9cd2158b08fbef9f44)
+        ;
+
+        
+    
+    
+                marker_3988c2dd3e035fe39d4ac528abca97a3.setIcon(icon_29ff47eac986f4d2f751b0485c3a32a4);
+            
+    
+            var marker_5313211ed0ed9d6e1b323547d7f09279 = L.marker(
+                [35.5771, 34.9532],
+                {
+}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var icon_c44175399fd40a3b3ce30759ebdf25fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf1955e2637a4d2befff31dc12e2abb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_751204c446e5da3be7320a4dfc64424f = $(`<div id="html_751204c446e5da3be7320a4dfc64424f" style="width: 100.0%; height: 100.0%;"><b>MT BHARAT RATNA</b><br>Guilt: 11.8%<br>Speed: 18.4 kn</div>`)[0];
+                popup_bf1955e2637a4d2befff31dc12e2abb9.setContent(html_751204c446e5da3be7320a4dfc64424f);
+            
+        
+
+        marker_5313211ed0ed9d6e1b323547d7f09279.bindPopup(popup_bf1955e2637a4d2befff31dc12e2abb9)
+        ;
+
+        
+    
+    
+                marker_5313211ed0ed9d6e1b323547d7f09279.setIcon(icon_c44175399fd40a3b3ce30759ebdf25fd);
+            
+    
+            var marker_73c25910146de97a9db538dc0284c65b = L.marker(
+                [35.302, 34.8367],
+                {
+}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var icon_be13b850377e05443618a3c42a2e430e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2accb78fb903a9715659be3bee5ccf21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0542ae706f13517b54e258f7cbbc3881 = $(`<div id="html_0542ae706f13517b54e258f7cbbc3881" style="width: 100.0%; height: 100.0%;"><b>MT STENA BULK</b><br>Guilt: 11.8%<br>Speed: 18.4 kn</div>`)[0];
+                popup_2accb78fb903a9715659be3bee5ccf21.setContent(html_0542ae706f13517b54e258f7cbbc3881);
+            
+        
+
+        marker_73c25910146de97a9db538dc0284c65b.bindPopup(popup_2accb78fb903a9715659be3bee5ccf21)
+        ;
+
+        
+    
+    
+                marker_73c25910146de97a9db538dc0284c65b.setIcon(icon_be13b850377e05443618a3c42a2e430e);
+            
+    
+            var marker_0197d76a66568f1bebb12c2aaffdd267 = L.marker(
+                [35.4733, 34.8446],
+                {
+}
+            ).addTo(map_9d587c501f60ea09b12d97772283534a);
+        
+    
+            var icon_22c835a0daaadfaec714d031a48079a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5bb24e047fea5db412bd11806b299ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1424f7d48ad22f831d4bfa95bd62e19 = $(`<div id="html_a1424f7d48ad22f831d4bfa95bd62e19" style="width: 100.0%; height: 100.0%;"><b>MV CHENNAI EXPRESS</b><br>Guilt: 3.6%<br>Speed: 18.9 kn</div>`)[0];
+                popup_f5bb24e047fea5db412bd11806b299ae.setContent(html_a1424f7d48ad22f831d4bfa95bd62e19);
+            
+        
+
+        marker_0197d76a66568f1bebb12c2aaffdd267.bindPopup(popup_f5bb24e047fea5db412bd11806b299ae)
+        ;
+
+        
+    
+    
+                marker_0197d76a66568f1bebb12c2aaffdd267.setIcon(icon_22c835a0daaadfaec714d031a48079a9);
+            
+</script>
+</html>

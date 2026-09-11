@@ -1,0 +1,91 @@
+{
+  "filename": "upload_1789104594537_00003.tif",
+  "isSpill": true,
+  "areaKm2": 6.02,
+  "perimeterKm": 12.97,
+  "conf": 81.6,
+  "edgeGradient": 129.1,
+  "iou": 89.2,
+  "region": "Red Sea Shipping Corridor",
+  "coords": {
+    "lat": 20.16152,
+    "lon": 38.21825
+  },
+  "originCoords": {
+    "lat": 20.1852,
+    "lon": 38.1864
+  },
+  "driftKm": 4.24,
+  "advectionKnots": 0.4,
+  "driftHours": 6.0,
+  "windSpeed": 1.8,
+  "windDir": 272.0,
+  "driftVector": {
+    "u": 0.15,
+    "v": -0.12
+  },
+  "filterVerdict": "Validated Genuine Oil Spill (Sharp Viscoelastic Edge: 129.1 >= 22.0)",
+  "culprit": {
+    "name": "MT FRONT ALTAIR",
+    "imo": "IMO9745902",
+    "mmsi": 419000103,
+    "type": "Crude Tanker",
+    "sog": 6.9,
+    "distKm": 0.37,
+    "guiltProb": 72.6,
+    "status": "CULPRIT"
+  },
+  "fleet": [
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000103,
+      "type": "Crude Tanker",
+      "sog": 6.9,
+      "distKm": 0.37,
+      "guiltProb": 72.6,
+      "status": "CULPRIT"
+    },
+    {
+      "name": "MT CASPIAN LEADER",
+      "imo": "IMO9553102",
+      "mmsi": 419000203,
+      "type": "Crude Tanker",
+      "sog": 17.3,
+      "distKm": 20.3,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT BHARAT RATNA",
+      "imo": "IMO9387401",
+      "mmsi": 419000303,
+      "type": "Crude Tanker",
+      "sog": 19.2,
+      "distKm": 18.5,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "EVER GIVEN",
+      "imo": "IMO9811000",
+      "mmsi": 419000403,
+      "type": "Container Cargo",
+      "sog": 18.5,
+      "distKm": 11.3,
+      "guiltProb": 3.8,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

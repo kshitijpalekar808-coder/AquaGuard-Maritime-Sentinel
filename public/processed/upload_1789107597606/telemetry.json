@@ -1,0 +1,135 @@
+{
+  "filename": "upload_1789107597606_00001.tif",
+  "isSpill": true,
+  "areaKm2": 4.65,
+  "perimeterKm": 1.33,
+  "conf": 65.4,
+  "edgeGradient": 172.9,
+  "iou": 89.2,
+  "region": "Mediterranean Sea",
+  "coords": {
+    "lat": 35.43069,
+    "lon": 35.03517
+  },
+  "originCoords": {
+    "lat": 35.4416,
+    "lon": 34.9822
+  },
+  "driftKm": 4.95,
+  "advectionKnots": 0.5,
+  "driftHours": 6.0,
+  "windSpeed": 1.4,
+  "windDir": 278.0,
+  "driftVector": {
+    "u": 0.22,
+    "v": -0.06
+  },
+  "filterVerdict": "Validated Genuine Oil Spill (Sharp Viscoelastic Edge: 172.9 >= 22.0)",
+  "timeSpan": {
+    "acquisition_utc": "2026-09-11 06:20:21 UTC",
+    "search_window_from": "2026-09-10 00:00:00",
+    "search_window_to": "2026-09-11 23:59:59",
+    "duration_hours": 24.0
+  },
+  "accessaisTelemetry": {
+    "success": true,
+    "source": "NOAA MarineCadastre AccessAIS (Sector Estimate)",
+    "time_span": {
+      "from_utc": "2026-09-10 00:00:00",
+      "to_utc": "2026-09-11 23:59:59",
+      "duration_hours": 24.0
+    },
+    "bounding_box": {
+      "min_lon": 34.6487,
+      "min_lat": 35.1158,
+      "max_lon": 35.4217,
+      "max_lat": 35.7456,
+      "sq_miles": 2180.0
+    },
+    "traffic_records": 31347,
+    "data_size_bytes": 3422238,
+    "data_size_mb": 3.42,
+    "runtime_ms": 56,
+    "api_valid": true
+  },
+  "effnetSegmentation": {
+    "model": "EfficientNet-B4 + UNet++ (effnetb4andunetpp.pt)",
+    "metrics": {
+      "epoch": 20,
+      "dice": 0.8728,
+      "iou": 0.7843,
+      "precision": 0.867,
+      "recall": 0.908
+    },
+    "centroid": {
+      "latitude": 35.43069,
+      "longitude": 35.03517
+    },
+    "areaKm2": 1.18,
+    "spillDetected": true
+  },
+  "culprit": {
+    "name": "EVER GIVEN",
+    "imo": "IMO9811000",
+    "mmsi": 419000131,
+    "type": "Container Cargo",
+    "sog": 6.6,
+    "distKm": 0.33,
+    "guiltProb": 64.5,
+    "status": "CULPRIT"
+  },
+  "fleet": [
+    {
+      "name": "EVER GIVEN",
+      "imo": "IMO9811000",
+      "mmsi": 419000131,
+      "type": "Container Cargo",
+      "sog": 6.6,
+      "distKm": 0.33,
+      "guiltProb": 64.5,
+      "status": "CULPRIT"
+    },
+    {
+      "name": "MT STENA BULK",
+      "imo": "IMO9688118",
+      "mmsi": 419000231,
+      "type": "Product Tanker",
+      "sog": 18.7,
+      "distKm": 14.6,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000331,
+      "type": "Crude Tanker",
+      "sog": 19.5,
+      "distKm": 15.0,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT GULF HORIZON",
+      "imo": "IMO9615309",
+      "mmsi": 419000431,
+      "type": "Crude Tanker",
+      "sog": 16.1,
+      "distKm": 15.5,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "effnet": "panel_effnet.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

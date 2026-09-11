@@ -1,0 +1,135 @@
+{
+  "filename": "00003.tif",
+  "isSpill": true,
+  "areaKm2": 6.02,
+  "perimeterKm": 12.97,
+  "conf": 81.6,
+  "edgeGradient": 129.1,
+  "iou": 89.2,
+  "region": "Red Sea Shipping Corridor",
+  "coords": {
+    "lat": 20.14189,
+    "lon": 38.20325
+  },
+  "originCoords": {
+    "lat": 20.167,
+    "lon": 38.1728
+  },
+  "driftKm": 4.23,
+  "advectionKnots": 0.4,
+  "driftHours": 6.0,
+  "windSpeed": 1.6,
+  "windDir": 281.0,
+  "driftVector": {
+    "u": 0.15,
+    "v": -0.13
+  },
+  "filterVerdict": "Validated Genuine Oil Spill (Sharp Viscoelastic Edge: 129.1 >= 22.0)",
+  "timeSpan": {
+    "acquisition_utc": "2026-09-11 06:50:31 UTC",
+    "search_window_from": "2026-09-10 00:00:00",
+    "search_window_to": "2026-09-11 23:59:59",
+    "duration_hours": 24.0
+  },
+  "accessaisTelemetry": {
+    "success": true,
+    "source": "NOAA MarineCadastre AccessAIS (Sector Estimate)",
+    "time_span": {
+      "from_utc": "2026-09-10 00:00:00",
+      "to_utc": "2026-09-11 23:59:59",
+      "duration_hours": 24.0
+    },
+    "bounding_box": {
+      "min_lon": 37.8678,
+      "min_lat": 19.827,
+      "max_lon": 38.5387,
+      "max_lat": 20.4568,
+      "sq_miles": 2180.0
+    },
+    "traffic_records": 31347,
+    "data_size_bytes": 3422238,
+    "data_size_mb": 3.42,
+    "runtime_ms": 56,
+    "api_valid": true
+  },
+  "effnetSegmentation": {
+    "model": "EfficientNet-B4 + UNet++ (effnetb4andunetpp.pt)",
+    "metrics": {
+      "epoch": 20,
+      "dice": 0.8728,
+      "iou": 0.7843,
+      "precision": 0.867,
+      "recall": 0.908
+    },
+    "centroid": {
+      "latitude": 20.14189,
+      "longitude": 38.20325
+    },
+    "areaKm2": 3.44,
+    "spillDetected": true
+  },
+  "culprit": {
+    "name": "MT NORDIC STAR",
+    "imo": "IMO9498224",
+    "mmsi": 419000103,
+    "type": "Crude Tanker",
+    "sog": 6.5,
+    "distKm": 0.29,
+    "guiltProb": 72.6,
+    "status": "CULPRIT"
+  },
+  "fleet": [
+    {
+      "name": "MT NORDIC STAR",
+      "imo": "IMO9498224",
+      "mmsi": 419000103,
+      "type": "Crude Tanker",
+      "sog": 6.5,
+      "distKm": 0.29,
+      "guiltProb": 72.6,
+      "status": "CULPRIT"
+    },
+    {
+      "name": "MT PACIFIC GLORY",
+      "imo": "IMO9412345",
+      "mmsi": 419000203,
+      "type": "Crude Tanker",
+      "sog": 15.3,
+      "distKm": 19.1,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT GULF HORIZON",
+      "imo": "IMO9615309",
+      "mmsi": 419000403,
+      "type": "Crude Tanker",
+      "sog": 16.1,
+      "distKm": 14.4,
+      "guiltProb": 11.8,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MAERSK MC-KINNEY",
+      "imo": "IMO9619907",
+      "mmsi": 419000303,
+      "type": "Container Cargo",
+      "sog": 18.8,
+      "distKm": 11.2,
+      "guiltProb": 3.8,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "effnet": "panel_effnet.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

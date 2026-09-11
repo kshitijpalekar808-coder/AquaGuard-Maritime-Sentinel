@@ -1,0 +1,218 @@
+[
+  {
+    "id": "oil_00000.tif",
+    "filename": "oil_00000.tif",
+    "name": "Heavy Crude Discharge Channel",
+    "category": "OIL",
+    "description": "High-contrast linear crude oil discharge wake along active shipping channel.",
+    "ground_truth_km2": 4.85,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "oil_00001.tif",
+    "filename": "oil_00001.tif",
+    "name": "Vessel Bilge Discharge Plume",
+    "category": "OIL",
+    "description": "Elongated operational bilge dump trailing moving vessel wake.",
+    "ground_truth_km2": 6.20,
+    "corridor_id": "cochin_route"
+  },
+  {
+    "id": "oil_00002.tif",
+    "filename": "oil_00002.tif",
+    "name": "Multi-Formation Slick Complex",
+    "category": "OIL",
+    "description": "Dual vortex oil formation with prominent surface damping.",
+    "ground_truth_km2": 11.45,
+    "corridor_id": "bay_of_bengal"
+  },
+  {
+    "id": "oil_00003.tif",
+    "filename": "oil_00003.tif",
+    "name": "Coastal Spillage Pattern",
+    "category": "OIL",
+    "description": "Heavy hydrocarbon dispersion near shallow coastal waters.",
+    "ground_truth_km2": 8.75,
+    "corridor_id": "goa_karwar"
+  },
+  {
+    "id": "oil_00004.tif",
+    "filename": "oil_00004.tif",
+    "name": "Tanker Terminal Bilge Streak",
+    "category": "OIL",
+    "description": "Sharp-gradient oil streak near port anchorage fairway.",
+    "ground_truth_km2": 5.10,
+    "corridor_id": "gulf_of_kutch"
+  },
+  {
+    "id": "oil_00005.tif",
+    "filename": "oil_00005.tif",
+    "name": "High-Volume Crude Wake",
+    "category": "OIL",
+    "description": "Continuous discharge ribbon with strong Bragg scattering attenuation.",
+    "ground_truth_km2": 14.30,
+    "corridor_id": "palk_strait"
+  },
+  {
+    "id": "oil_00006.tif",
+    "filename": "oil_00006.tif",
+    "name": "Offshore Rig Vicinity Slick",
+    "category": "OIL",
+    "description": "Radial hydrocarbon spread from offshore exploration sector.",
+    "ground_truth_km2": 7.60,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "oil_00007.tif",
+    "filename": "oil_00007.tif",
+    "name": "Dispersed Hydrocarbon Plume",
+    "category": "OIL",
+    "description": "Aging crude oil patch showing wind-driven filamentation.",
+    "ground_truth_km2": 9.15,
+    "corridor_id": "cochin_route"
+  },
+  {
+    "id": "lookalike_00000.tif",
+    "filename": "lookalike_00000.tif",
+    "name": "Biogenic Surfactant Bloom",
+    "category": "LOOKALIKE",
+    "description": "Natural phytoplankton oil secretion. Low gradient rejected by physics filter.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "bay_of_bengal"
+  },
+  {
+    "id": "lookalike_00001.tif",
+    "filename": "lookalike_00001.tif",
+    "name": "Low-Wind Ocean Shadow",
+    "category": "LOOKALIKE",
+    "description": "Atmospheric wind calm zone (< 2 m/s). Smooth boundary without physical damping.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "lookalike_00002.tif",
+    "filename": "lookalike_00002.tif",
+    "name": "Internal Solitary Wave Slick",
+    "category": "LOOKALIKE",
+    "description": "Thermocline internal wave modulation resembling dark surface bands.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "cochin_route"
+  },
+  {
+    "id": "lookalike_00003.tif",
+    "filename": "lookalike_00003.tif",
+    "name": "Rain Cell Downdraft Shadow",
+    "category": "LOOKALIKE",
+    "description": "Convective downdraft creating radar attenuation patch.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "goa_karwar"
+  },
+  {
+    "id": "lookalike_00004.tif",
+    "filename": "lookalike_00004.tif",
+    "name": "Coastal Upwelling Zone",
+    "category": "LOOKALIKE",
+    "description": "Cold nutrient-rich water upwelling with organic organic slicks.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "gulf_of_kutch"
+  },
+  {
+    "id": "lookalike_00005.tif",
+    "filename": "lookalike_00005.tif",
+    "name": "Grease Ice / Foam Swirl",
+    "category": "LOOKALIKE",
+    "description": "Surface wave foam and sub-surface organic clustering.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "palk_strait"
+  },
+  {
+    "id": "lookalike_00006.tif",
+    "filename": "lookalike_00006.tif",
+    "name": "Island Lee Wind Calm",
+    "category": "LOOKALIKE",
+    "description": "Topographic wind shielding behind coastal headland.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "bay_of_bengal"
+  },
+  {
+    "id": "lookalike_00007.tif",
+    "filename": "lookalike_00007.tif",
+    "name": "River Runoff Organic Plume",
+    "category": "LOOKALIKE",
+    "description": "Estuarine sediment and freshwater outflow damping Bragg waves.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "clean_00000.tif",
+    "filename": "clean_00000.tif",
+    "name": "Open Ocean Surface - Sector A",
+    "category": "CLEAN_SEA",
+    "description": "Nominal sea state with uniform Bragg backscatter. Zero anomalies.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "clean_00001.tif",
+    "filename": "clean_00001.tif",
+    "name": "Open Ocean Surface - Sector B",
+    "category": "CLEAN_SEA",
+    "description": "Standard capillary wave clutter under moderate 12 kn trade winds.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "cochin_route"
+  },
+  {
+    "id": "clean_00002.tif",
+    "filename": "clean_00002.tif",
+    "name": "Open Ocean Surface - Sector C",
+    "category": "CLEAN_SEA",
+    "description": "Unperturbed marine corridor along major shipping lane.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "bay_of_bengal"
+  },
+  {
+    "id": "clean_00003.tif",
+    "filename": "clean_00003.tif",
+    "name": "Open Ocean Surface - Sector D",
+    "category": "CLEAN_SEA",
+    "description": "Clear patrol boundary with homogeneous radar returns.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "goa_karwar"
+  },
+  {
+    "id": "clean_00004.tif",
+    "filename": "clean_00004.tif",
+    "name": "Open Ocean Surface - Sector E",
+    "category": "CLEAN_SEA",
+    "description": "Deep-water transit zone without any biological or mineral films.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "gulf_of_kutch"
+  },
+  {
+    "id": "clean_00005.tif",
+    "filename": "clean_00005.tif",
+    "name": "Open Ocean Surface - Sector F",
+    "category": "CLEAN_SEA",
+    "description": "Calm swell baseline without hydrocarbon damping signatures.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "palk_strait"
+  },
+  {
+    "id": "clean_00006.tif",
+    "filename": "clean_00006.tif",
+    "name": "Open Ocean Surface - Sector G",
+    "category": "CLEAN_SEA",
+    "description": "High-salinity offshore patrol sector in clear condition.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "mumbai_high"
+  },
+  {
+    "id": "clean_00007.tif",
+    "filename": "clean_00007.tif",
+    "name": "Open Ocean Surface - Sector H",
+    "category": "CLEAN_SEA",
+    "description": "Naval surveillance sector with zero maritime discharge.",
+    "ground_truth_km2": 0.00,
+    "corridor_id": "cochin_route"
+  }
+]

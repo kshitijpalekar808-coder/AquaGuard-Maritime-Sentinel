@@ -1,0 +1,82 @@
+{
+  "filename": "00058.webp",
+  "isSpill": false,
+  "areaKm2": 0.0,
+  "perimeterKm": 0.0,
+  "conf": 0.0,
+  "edgeGradient": 12.8,
+  "iou": 100.0,
+  "region": "Bay of Bengal (Paradip Approach)",
+  "coords": {
+    "lat": 19.82,
+    "lon": 86.91
+  },
+  "originCoords": {
+    "lat": 19.7458,
+    "lon": 86.974
+  },
+  "driftKm": 10.63,
+  "advectionKnots": 1.0,
+  "driftHours": 6.0,
+  "windSpeed": 10.4,
+  "windDir": 147.0,
+  "driftVector": {
+    "u": -0.31,
+    "v": 0.38
+  },
+  "filterVerdict": "Natural Look-Alike Suppressed by Physics (|\u2207I| = 12.8 < 22.0)",
+  "culprit": null,
+  "fleet": [
+    {
+      "name": "MT PACIFIC GLORY",
+      "imo": "IMO9412345",
+      "mmsi": 419000158,
+      "type": "Crude Tanker",
+      "sog": 16.3,
+      "distKm": 9.5,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT NORDIC STAR",
+      "imo": "IMO9498224",
+      "mmsi": 419000258,
+      "type": "Crude Tanker",
+      "sog": 15.7,
+      "distKm": 13.6,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT STENA BULK",
+      "imo": "IMO9688118",
+      "mmsi": 419000358,
+      "type": "Product Tanker",
+      "sog": 18.4,
+      "distKm": 20.4,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000458,
+      "type": "Crude Tanker",
+      "sog": 16.2,
+      "distKm": 19.5,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

@@ -1,0 +1,48 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js build output
+/.next/
+/out/
+
+# Production
+/build
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local environment files
+.env*.local
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Temporary and extraction artifacts
+public/uploads/upload_*
+oil_spill_backend/
+143-main/
+ezgif-frame-*.jpg
+temp_test_chip.jpg
+test-corner.png
+test_*.py
+tsconfig.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db

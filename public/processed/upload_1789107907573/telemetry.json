@@ -1,0 +1,135 @@
+{
+  "filename": "upload_1789107907573_00001.tif",
+  "isSpill": true,
+  "areaKm2": 4.65,
+  "perimeterKm": 1.33,
+  "conf": 65.4,
+  "edgeGradient": 172.9,
+  "iou": 89.2,
+  "region": "Mediterranean Sea",
+  "coords": {
+    "lat": 35.43069,
+    "lon": 35.03517
+  },
+  "originCoords": {
+    "lat": 35.4513,
+    "lon": 35.0442
+  },
+  "driftKm": 2.43,
+  "advectionKnots": 0.2,
+  "driftHours": 6.0,
+  "windSpeed": 1.4,
+  "windDir": 278.0,
+  "driftVector": {
+    "u": -0.04,
+    "v": -0.11
+  },
+  "filterVerdict": "Validated Genuine Oil Spill (Sharp Viscoelastic Edge: 172.9 >= 22.0)",
+  "timeSpan": {
+    "acquisition_utc": "2026-09-11 06:25:35 UTC",
+    "search_window_from": "2026-09-10 00:00:00",
+    "search_window_to": "2026-09-11 23:59:59",
+    "duration_hours": 24.0
+  },
+  "accessaisTelemetry": {
+    "success": true,
+    "source": "NOAA MarineCadastre AccessAIS (Sector Estimate)",
+    "time_span": {
+      "from_utc": "2026-09-10 00:00:00",
+      "to_utc": "2026-09-11 23:59:59",
+      "duration_hours": 24.0
+    },
+    "bounding_box": {
+      "min_lon": 34.6487,
+      "min_lat": 35.1158,
+      "max_lon": 35.4217,
+      "max_lat": 35.7456,
+      "sq_miles": 2180.0
+    },
+    "traffic_records": 31347,
+    "data_size_bytes": 3422238,
+    "data_size_mb": 3.42,
+    "runtime_ms": 56,
+    "api_valid": true
+  },
+  "effnetSegmentation": {
+    "model": "EfficientNet-B4 + UNet++ (effnetb4andunetpp.pt)",
+    "metrics": {
+      "epoch": 20,
+      "dice": 0.8728,
+      "iou": 0.7843,
+      "precision": 0.867,
+      "recall": 0.908
+    },
+    "centroid": {
+      "latitude": 35.43069,
+      "longitude": 35.03517
+    },
+    "areaKm2": 1.18,
+    "spillDetected": true
+  },
+  "culprit": {
+    "name": "MT GULF HORIZON",
+    "imo": "IMO9615309",
+    "mmsi": 419000111,
+    "type": "Crude Tanker",
+    "sog": 5.6,
+    "distKm": 0.33,
+    "guiltProb": 67.1,
+    "status": "CULPRIT"
+  },
+  "fleet": [
+    {
+      "name": "MT GULF HORIZON",
+      "imo": "IMO9615309",
+      "mmsi": 419000111,
+      "type": "Crude Tanker",
+      "sog": 5.6,
+      "distKm": 0.33,
+      "guiltProb": 67.1,
+      "status": "CULPRIT"
+    },
+    {
+      "name": "MT BHARAT RATNA",
+      "imo": "IMO9387401",
+      "mmsi": 419000311,
+      "type": "Crude Tanker",
+      "sog": 16.1,
+      "distKm": 11.7,
+      "guiltProb": 11.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000211,
+      "type": "Crude Tanker",
+      "sog": 17.2,
+      "distKm": 22.6,
+      "guiltProb": 10.9,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT DESH SHANTI",
+      "imo": "IMO9295787",
+      "mmsi": 419000411,
+      "type": "Crude Tanker",
+      "sog": 16.2,
+      "distKm": 16.0,
+      "guiltProb": 10.9,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "effnet": "panel_effnet.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

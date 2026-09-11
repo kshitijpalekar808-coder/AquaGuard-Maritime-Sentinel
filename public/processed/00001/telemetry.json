@@ -1,0 +1,91 @@
+{
+  "filename": "00001.webp",
+  "isSpill": true,
+  "areaKm2": 11.27,
+  "perimeterKm": 0.75,
+  "conf": 52.6,
+  "edgeGradient": 128.4,
+  "iou": 89.2,
+  "region": "Gulf of Kutch (Tanker Anchorage)",
+  "coords": {
+    "lat": 22.418,
+    "lon": 69.152
+  },
+  "originCoords": {
+    "lat": 22.4413,
+    "lon": 69.0784
+  },
+  "driftKm": 8.0,
+  "advectionKnots": 0.7,
+  "driftHours": 6.0,
+  "windSpeed": 5.8,
+  "windDir": 240.0,
+  "driftVector": {
+    "u": 0.35,
+    "v": -0.12
+  },
+  "filterVerdict": "Validated Genuine Oil Spill (Sharp Viscoelastic Edge: 128.4 >= 22.0)",
+  "culprit": {
+    "name": "MT GULF HORIZON",
+    "imo": "IMO9615309",
+    "mmsi": 419000101,
+    "type": "Crude Tanker",
+    "sog": 6.8,
+    "distKm": 0.22,
+    "guiltProb": 67.3,
+    "status": "CULPRIT"
+  },
+  "fleet": [
+    {
+      "name": "MT GULF HORIZON",
+      "imo": "IMO9615309",
+      "mmsi": 419000101,
+      "type": "Crude Tanker",
+      "sog": 6.8,
+      "distKm": 0.22,
+      "guiltProb": 67.3,
+      "status": "CULPRIT"
+    },
+    {
+      "name": "MT PACIFIC GLORY",
+      "imo": "IMO9412345",
+      "mmsi": 419000201,
+      "type": "Crude Tanker",
+      "sog": 16.7,
+      "distKm": 17.1,
+      "guiltProb": 10.9,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT BHARAT RATNA",
+      "imo": "IMO9387401",
+      "mmsi": 419000301,
+      "type": "Crude Tanker",
+      "sog": 17.2,
+      "distKm": 13.7,
+      "guiltProb": 10.9,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT CASPIAN LEADER",
+      "imo": "IMO9553102",
+      "mmsi": 419000401,
+      "type": "Crude Tanker",
+      "sog": 16.8,
+      "distKm": 22.6,
+      "guiltProb": 10.9,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

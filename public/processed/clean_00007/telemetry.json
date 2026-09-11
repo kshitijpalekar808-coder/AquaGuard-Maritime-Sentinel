@@ -1,0 +1,82 @@
+{
+  "filename": "clean_00007.webp",
+  "isSpill": false,
+  "areaKm2": 0.0,
+  "perimeterKm": 0.0,
+  "conf": 0.0,
+  "edgeGradient": 14.5,
+  "iou": 100.0,
+  "region": "Gulf of Kutch (Tanker Anchorage)",
+  "coords": {
+    "lat": 22.418,
+    "lon": 69.152
+  },
+  "originCoords": {
+    "lat": 22.4281,
+    "lon": 69.1028
+  },
+  "driftKm": 5.18,
+  "advectionKnots": 0.5,
+  "driftHours": 6.0,
+  "windSpeed": 1.8,
+  "windDir": 272.0,
+  "driftVector": {
+    "u": 0.23,
+    "v": -0.05
+  },
+  "filterVerdict": "Natural Look-Alike Suppressed by Physics (|\u2207I| = 14.5 < 22.0)",
+  "culprit": null,
+  "fleet": [
+    {
+      "name": "MT DESH SHANTI",
+      "imo": "IMO9295787",
+      "mmsi": 419000107,
+      "type": "Crude Tanker",
+      "sog": 16.6,
+      "distKm": 9.9,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT GULF HORIZON",
+      "imo": "IMO9615309",
+      "mmsi": 419000207,
+      "type": "Crude Tanker",
+      "sog": 14.7,
+      "distKm": 13.8,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MV CHENNAI EXPRESS",
+      "imo": "IMO9321456",
+      "mmsi": 419000307,
+      "type": "Container Cargo",
+      "sog": 14.6,
+      "distKm": 15.6,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT ARABIAN BREEZE",
+      "imo": "IMO9511200",
+      "mmsi": 419000407,
+      "type": "Crude Tanker",
+      "sog": 14.8,
+      "distKm": 14.6,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "filename": "00148.tif",
+  "isSpill": false,
+  "areaKm2": 0.0,
+  "perimeterKm": 0.0,
+  "conf": 0.0,
+  "edgeGradient": 0.0,
+  "iou": 100.0,
+  "region": "Bay of Bengal (Paradip Approach)",
+  "coords": {
+    "lat": 19.82,
+    "lon": 86.91
+  },
+  "originCoords": {
+    "lat": 19.751,
+    "lon": 86.9769
+  },
+  "driftKm": 10.39,
+  "advectionKnots": 0.9,
+  "driftHours": 6.0,
+  "windSpeed": 10.0,
+  "windDir": 142.0,
+  "driftVector": {
+    "u": -0.32,
+    "v": 0.35
+  },
+  "filterVerdict": "No candidate anomaly detected by YOLO",
+  "timeSpan": {
+    "acquisition_utc": "2026-09-11 05:48:00 UTC",
+    "search_window_from": "2026-09-10 00:00:00",
+    "search_window_to": "2026-09-11 23:59:59",
+    "duration_hours": 24.0
+  },
+  "accessaisTelemetry": {
+    "success": true,
+    "source": "NOAA MarineCadastre AccessAIS (Sector Estimate)",
+    "time_span": {
+      "from_utc": "2026-09-10 00:00:00",
+      "to_utc": "2026-09-11 23:59:59",
+      "duration_hours": 24.0
+    },
+    "bounding_box": {
+      "min_lon": 86.5752,
+      "min_lat": 19.5051,
+      "max_lon": 87.2448,
+      "max_lat": 20.1349,
+      "sq_miles": 2180.0
+    },
+    "traffic_records": 31347,
+    "data_size_bytes": 3422238,
+    "data_size_mb": 3.42,
+    "runtime_ms": 56,
+    "api_valid": true
+  },
+  "effnetSegmentation": {
+    "model": "EfficientNet-B4 + UNet++ (effnetb4andunetpp.pt)",
+    "metrics": {
+      "epoch": 20,
+      "dice": 0.8728,
+      "iou": 0.7843,
+      "precision": 0.867,
+      "recall": 0.908
+    },
+    "centroid": {
+      "latitude": 19.82,
+      "longitude": 86.91
+    },
+    "areaKm2": 0.0,
+    "spillDetected": false
+  },
+  "culprit": null,
+  "fleet": [
+    {
+      "name": "MV CHENNAI EXPRESS",
+      "imo": "IMO9321456",
+      "mmsi": 419000158,
+      "type": "Container Cargo",
+      "sog": 16.1,
+      "distKm": 20.2,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT STENA BULK",
+      "imo": "IMO9688118",
+      "mmsi": 419000258,
+      "type": "Product Tanker",
+      "sog": 15.6,
+      "distKm": 13.5,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT FRONT ALTAIR",
+      "imo": "IMO9745902",
+      "mmsi": 419000358,
+      "type": "Crude Tanker",
+      "sog": 17.0,
+      "distKm": 11.5,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    },
+    {
+      "name": "MT ARABIAN BREEZE",
+      "imo": "IMO9511200",
+      "mmsi": 419000458,
+      "type": "Crude Tanker",
+      "sog": 18.4,
+      "distKm": 21.4,
+      "guiltProb": 0.0,
+      "status": "CLEARED"
+    }
+  ],
+  "panels": {
+    "sar": "panel_1_sar.png",
+    "gt": "panel_2_gt.png",
+    "yolo": "panel_3_yolo.png",
+    "iou": "panel_4_iou.png",
+    "optical": "panel_5_optical.png",
+    "effnet": "panel_effnet.png",
+    "ais": "panel_6_ais.png",
+    "dashboard": "full_system_dashboard.png",
+    "mapHtml": "interactive_spill_map.html",
+    "pdfDossier": "MARITIME_SENTINEL_EVIDENTIARY_DOSSIER.pdf"
+  }
+}
