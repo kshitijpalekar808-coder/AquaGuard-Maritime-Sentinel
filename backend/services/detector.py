@@ -8,6 +8,14 @@ import numpy as np
 import rasterio
 from pathlib import Path
 
+import sys
+from pathlib import Path
+
+# Add project root to sys.path for direct execution
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 import backend.services.win_fix
 from ultralytics import YOLO
 from backend.config import MODEL_PATH, CONF_THRESHOLD
